@@ -13,18 +13,20 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/about/"/>
+    <link rel="canonical" href="http://example.com/2024/06/01/rust-語言簡介/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="WHOAMI">
-<meta property="og:url" content="http://example.com/about/index.html">
+        <meta name="description" content="安裝安裝 Rust透過 rustup 安裝 Rust，這是個管理 Rust 版本及相關工具的命令列工具。For Windows：https:&#x2F;&#x2F;www.rust-lang.org&#x2F;tools&#x2F;install打開 shell 確認是否安裝成功： 12$ rustc --versionrustc x.y.z (abcabcabc yyyy-mm-dd)  安裝 CargoCargo 是 Rust 的建">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rust 語言簡介">
+<meta property="og:url" content="http://example.com/2024/06/01/Rust-%E8%AA%9E%E8%A8%80%E7%B0%A1%E4%BB%8B/index.html">
 <meta property="og:site_name" content="SoWiEee&#39;s Blog">
+<meta property="og:description" content="安裝安裝 Rust透過 rustup 安裝 Rust，這是個管理 Rust 版本及相關工具的命令列工具。For Windows：https:&#x2F;&#x2F;www.rust-lang.org&#x2F;tools&#x2F;install打開 shell 確認是否安裝成功： 12$ rustc --versionrustc x.y.z (abcabcabc yyyy-mm-dd)  安裝 CargoCargo 是 Rust 的建">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-05-06T01:02:17.000Z">
-<meta property="article:modified_time" content="2024-05-06T01:58:40.616Z">
+<meta property="article:published_time" content="2024-06-01T04:40:21.648Z">
+<meta property="article:modified_time" content="2024-06-01T18:03:08.750Z">
 <meta property="article:author" content="SoWiEee">
 <meta name="twitter:card" content="summary">
     
@@ -38,7 +40,7 @@
     
     <title>
         
-            WHOAMI -
+            Rust 語言簡介 -
         
         SoWiEee&#39;s Blog
     </title>
@@ -499,19 +501,171 @@
             <div class="main-content">
 
                 
-                    <div class="page-template-container">
-    
-    
-    
-    <div class="page-template-content markdown-body">
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">Rust 語言簡介</h1>
+                </div>
+            
+            </div>
+
         
-            <h1>WHOAMI</h1>
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/IMG_1749.jpg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">SoWiEee</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-06-01 12:40:21</span>
+        <span class="mobile">2024-06-01 12:40:21</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-06-02 02:03:08</span>
+            <span class="mobile">2024-06-02 02:03:08</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1.4k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>5 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><h3 id="安裝-Rust"><a href="#安裝-Rust" class="headerlink" title="安裝 Rust"></a>安裝 Rust</h3><p>透過 rustup 安裝 Rust，這是個管理 Rust 版本及相關工具的命令列工具。<br>For Windows：<a class="link"   target="_blank" rel="noopener" href="https://www.rust-lang.org/tools/install" >https://www.rust-lang.org/tools/install</a><br>打開 shell 確認是否安裝成功：</p>
+<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rustc --version</span></span><br><span class="line">rustc x.y.z (abcabcabc yyyy-mm-dd)</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="安裝-Cargo"><a href="#安裝-Cargo" class="headerlink" title="安裝 Cargo"></a>安裝 Cargo</h3><p>Cargo 是 Rust 的建構系統與套件管理工具。大部分的 Rustaceans 都會用此工具來管理他們的專案，因為 Cargo 能幫你處理很多任務，像是建構你的程式碼、下載你程式碼所需要的依賴函式庫並建構它們。<br>一般來說，在上個步驟已經順便幫你安裝好 Cargo，確認一下是否安裝成功：</p>
+<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">cargo --version</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="使用-Cargo-建立專案"><a href="#使用-Cargo-建立專案" class="headerlink" title="使用 Cargo 建立專案"></a>使用 Cargo 建立專案</h3><div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">cargo new hello_cargo <span class="comment"># 建立新專案 hello_cargo</span></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> hello_cargo        <span class="comment"># 移動到 hello_cargo 目錄底下</span></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">cargo run             <span class="comment"># 編譯並直接執行編譯好的執行檔</span></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">cargo run --release   <span class="comment"># 最佳化編譯</span></span></span><br></pre></td></tr></table></figure></div>
+
+<blockquote>
+<p>有時候編譯訊息可能會有 <code>unoptimized</code> 字樣，表示沒有進行最佳化編譯。如果想要最佳化，則在指令後面加上 <code>--release</code> 參數即可。</p>
+</blockquote>
+<p>在 hello_cargo 資料夾中會看到 2 個檔案：<br>Cargo.toml：專案設定檔。內容會分段落(section)，並且使用 <code>Key = Value</code> 的格式來撰寫。<br>src：包含 main.rs 檔，</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[package]</span><br><span class="line">name = &quot;hello_cargo&quot;    # 專案名稱</span><br><span class="line">version = &quot;0.1.0&quot;   # 專案版本</span><br><span class="line">edition = &quot;2021&quot;</span><br><span class="line"></span><br><span class="line"># See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html</span><br><span class="line"></span><br><span class="line">[dependencies]  # crates</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="安裝套件（Crate）"><a href="#安裝套件（Crate）" class="headerlink" title="安裝套件（Crate）"></a>安裝套件（Crate）</h3><p>在 Rust 裡面也有套件功能，稱為 crate。crate 就如同 C 語言中的 <code>stdio.h</code>、Python 中的 <code>pyautogui</code> 一樣。如果要使用別人寫好的套件，可以使用以下指令：</p>
+<div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">cargo add rand    <span class="comment"># 安裝產生亂數的套件 rand</span></span></span><br></pre></td></tr></table></figure></div>
+
+<p>這時可以發現 Cargo.toml 的 [dependencies] 底下多了 <code>rand = &quot;0.8.5&quot;</code>。<br>要知道有哪些套件可以使用，可以在 <a class="link"   target="_blank" rel="noopener" href="https://crates.io/" >crates.io</a> 查看。</p>
+<h2 id="原始資料型態"><a href="#原始資料型態" class="headerlink" title="原始資料型態"></a>原始資料型態</h2><p>在 Rust 中宣告數字時，有分成整數跟浮點數，而且分別還細分不同的範圍。不過在宣告時也不是一定要標記型別，Rust 會依整數或浮點數，分別給你 i32 以及 f64。</p>
+<h3 id="整數"><a href="#整數" class="headerlink" title="整數"></a>整數</h3><p>整數，也就是不帶小數點的數字，根據不同的需求在 Rust 有 8 bit、16 bit、32 bit、64 bit 以及 128 bit 等不同的型別。</p>
+<div class="highlight-container" data-rel="Rust"><figure class="iseeu highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">age</span>: <span class="type">i8</span> = <span class="number">20</span>;   <span class="comment">// 宣告 8 bits 的整數變數 age</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">money</span>: <span class="type">u32</span> = <span class="number">28825252</span>;  <span class="comment">// 宣告 32 bits 的無號整數變數 money</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="浮點數"><a href="#浮點數" class="headerlink" title="浮點數"></a>浮點數</h3><p>浮點數其實就是帶有小數點的數字，跟整數一樣，浮點數也有分 bit，但只有 32 bit（f32） 跟 64 bit（f64），而且第 1 個 bit 都是帶正負號的。</p>
+<h3 id="字元"><a href="#字元" class="headerlink" title="字元"></a>字元</h3><p>在 Rust 裡的字串需要使用雙引號包起來，如果是單引號的則是字元。<br>字元以 4 bytes 儲存，它可以用來放任何的 Unicode，也就是除了一般的英文數字外，要放中文日文甚至是 Emijo 也行。</p>
+<div class="highlight-container" data-rel="Rust"><figure class="iseeu highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">cc</span>: <span class="type">char</span> = <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="variable">huh</span> = <span class="string">&#x27;蛤&#x27;</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="variable">cat</span> = &#x27;🐈&#x27;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">println!</span>(<span class="string">&quot;&#123;&#125; says &#123;&#125;&quot;</span>, cat, huh);</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="布林值"><a href="#布林值" class="headerlink" title="布林值"></a>布林值</h3><p>布林值就更單純了，就只有真（true）跟假（false）兩種值。</p>
+<div class="highlight-container" data-rel="Rust"><figure class="iseeu highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">happy</span>: <span class="type">bool</span> = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="variable">is_adult</span> = <span class="literal">false</span>;</span><br></pre></td></tr></table></figure></div>
+
+
+  <div class="note p-4 mb-4 rounded-small default fa-comment 變數命名慣例">
+    <p>關於變數的命名慣例較常見的有以下 2 種：</p>
+<pre><code>* 駝峰式：例如 HasCat 或是 myStudentScore，透過大小寫做出區隔，樣子就來駱駝背上的駝峰一樣。
+* 蛇式：例如 has_cat 或是 my_student_score，中間用底線分開，上上下下的就像蛇一樣。
+</code></pre>
+<p>在其他語言可能沒有太大的差別，但 Rust 的編譯器會警告。<br>let 宣告的變數要用蛇式，然後 const 宣告的常數應該要全大寫。</p>
+
+  </div>
+
+<h3 id="陣列（Array）"><a href="#陣列（Array）" class="headerlink" title="陣列（Array）"></a>陣列（Array）</h3><p>在 Rust 中，陣列是存放一群相同型別的群組，當陣列在宣告的時候，需要同時宣告型別及數量，但其實也可讓編譯器處理。在做完宣告後，陣列大小就是固定的，所以不能對陣列進行新增或刪除的行為，倘若要修改陣列中的元素，需要加上 mut 的宣告。要注意的是，對於不可修改的陣列，Rust 硬性規定你一定要放好放滿，否則編譯器又會跑出來抱怨了。<br>如果我們在存取陣列的時候，存取了超過陣列容量的元素，不像 Javascript 默默地得到 undefined，而是會引發 Panic。</p>
+<div class="highlight-container" data-rel="Rust"><figure class="iseeu highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">list1</span>: [<span class="type">u8</span>; <span class="number">3</span>] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];  <span class="comment">// 放 3 個 u8 的元素</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">list2</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];   <span class="comment">// 編譯器自動識別為 3 個 i32 的元素</span></span><br><span class="line"><span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">list3</span> = [<span class="number">1450</span>, <span class="number">9527</span>, <span class="number">5566</span>];  <span class="comment">// 可修改的陣列</span></span><br><span class="line">list3[<span class="number">2</span>] = <span class="number">500</span>;  <span class="comment">// 將第 3 個元素修改成 500</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">println!</span>(<span class="string">&quot;&#123;&#125;&quot;</span>, list3.<span class="title function_ invoke__">len</span>());    <span class="comment">// 印出 3</span></span><br><span class="line"><span class="built_in">println!</span>(<span class="string">&quot;&#123;&#125;&quot;</span>, list3[<span class="number">1</span>]);   <span class="comment">// 印出 9527</span></span><br></pre></td></tr></table></figure></div>
+
+<p>當我們要印出陣列中的所有元素時，可以使用 <code>for</code> 迴圈來處理。使用 <code>for...in</code> 可以把陣列裡的元素一個一個拿出來。其中因為 list 本身是陣列，所以需要再透過 <code>.iter()</code> 方法把它轉成 Iterator，才能讓 <code>for ... in</code> 處理。</p>
+<div class="highlight-container" data-rel="Rust"><figure class="iseeu highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">list</span> = [<span class="number">123</span>, <span class="number">456</span>, <span class="number">789</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="variable">item</span> <span class="keyword">in</span> list.<span class="title function_ invoke__">iter</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;&#123;&#125;&quot;</span>, item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="元組（Tuple）"><a href="#元組（Tuple）" class="headerlink" title="元組（Tuple）"></a>元組（Tuple）</h3><p>Tuple 是一個有序的資料結構，與陣列不同的是，tuple 裡面可以放不同的資料型別。同樣，如果不想寫型別宣告，也是能交給編譯器猜。<br>當然，tuple 也有隨機存取的功能，只是用 <code>.1</code> 這種方式來寫。</p>
+<div class="highlight-container" data-rel="Rust"><figure class="iseeu highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">point</span>: (<span class="type">i32</span>, <span class="type">i32</span>, <span class="type">i32</span>) = (<span class="number">100</span>, <span class="number">200</span>, <span class="number">300</span>);</span><br><span class="line"><span class="keyword">let</span> <span class="variable">answer</span>: (<span class="type">char</span>, <span class="type">bool</span>) = (<span class="string">&#x27;蛤&#x27;</span>, <span class="literal">false</span>);</span><br><span class="line"><span class="built_in">println!</span>(<span class="string">&quot;&#123;&#125; &#123;&#125;&quot;</span>, answer.<span class="number">0</span>, answer.<span class="number">1</span>)</span><br></pre></td></tr></table></figure></div>
+
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/05/26/%E8%B3%87%E5%AE%89%E5%A4%A7%E8%A3%9C%E5%B8%96/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">資安大補帖</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
         
     </div>
-    <div class="page-template-comments">
-        
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">Rust 語言簡介</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D"><span class="nav-text">安裝</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D-Rust"><span class="nav-text">安裝 Rust</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D-Cargo"><span class="nav-text">安裝 Cargo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-Cargo-%E5%BB%BA%E7%AB%8B%E5%B0%88%E6%A1%88"><span class="nav-text">使用 Cargo 建立專案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D%E5%A5%97%E4%BB%B6%EF%BC%88Crate%EF%BC%89"><span class="nav-text">安裝套件（Crate）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%A7%8B%E8%B3%87%E6%96%99%E5%9E%8B%E6%85%8B"><span class="nav-text">原始資料型態</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B4%E6%95%B8"><span class="nav-text">整數</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E9%BB%9E%E6%95%B8"><span class="nav-text">浮點數</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E5%85%83"><span class="nav-text">字元</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%83%E6%9E%97%E5%80%BC"><span class="nav-text">布林值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%99%A3%E5%88%97%EF%BC%88Array%EF%BC%89"><span class="nav-text">陣列（Array）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%83%E7%B5%84%EF%BC%88Tuple%EF%BC%89"><span class="nav-text">元組（Tuple）</span></a></li></ol></li></ol>
+
     </div>
 </div>
+        </div>
+    
+</div>
+
 
 
                 
@@ -588,6 +742,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
